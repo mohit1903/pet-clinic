@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.mohit.petclinic</groupId>
 	<artifactId>pet-clinic</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 
 	<name>pet-clinic</name>
 	<description>Pet Clinic Project</description>
@@ -12,7 +12,7 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.1.1.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 
 	<properties>
@@ -34,6 +34,8 @@
                 <artifactId>maven-release-plugin</artifactId>
                 <configuration>
                 <goals>install</goals>
+                  <source>1.8</source>
+                  <target>1.8</target>
                 </configuration>
             </plugin>
         </plugins>
@@ -42,7 +44,8 @@
 
 <scm>
 <developerConnection>scm:git:https://github.com/mohit1903/pet-clinic.git</developerConnection>
-</scm>
+  <tag>pet-clinic-0.0.1</tag>
+  </scm>
 	<packaging>pom</packaging>
 <modules>
 	<module>pet-clinic-web</module>
